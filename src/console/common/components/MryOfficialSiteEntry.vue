@@ -1,7 +1,7 @@
 <template>
-  <div :class="$style.wrapper" @click="openMryDocSite">
-    <icon :style="iconStyle" icon="book"></icon>
-    <div :class="$style.iconText" :style="textStyle">文档中心</div>
+  <div :class="$style.wrapper" @click="openMrySite">
+    <icon :style="iconStyle" icon="laptop"></icon>
+    <div :class="$style.iconText" :style="textStyle">码如云官网</div>
   </div>
 </template>
 
@@ -42,8 +42,8 @@ export default {
   },
 
   methods: {
-    openMryDocSite() {
-      window.open('//docs.mryqr.com', '_blank');
+    openMrySite() {
+      window.open('//www.mryqr.com', '_blank');
     }
   }
 }

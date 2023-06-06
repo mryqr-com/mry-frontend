@@ -182,8 +182,14 @@ const AppTemplateDetailPage = () => import(/* webpackChunkName: "console-prefetc
 const PackagesSelectPage = () => import(/* webpackChunkName: "console-prefetch", webpackPrefetch: true */
     "@/console/public/packages/PackagesSelectPage");
 
+const FreePackagesPage = () => import(/* webpackChunkName: "console-prefetch", webpackPrefetch: true */
+    "@/console/public/packages/FreePackagesPage.vue");
+
 const PrintingServicePage = () => import(/* webpackChunkName: "console-prefetch", webpackPrefetch: true */
     "@/console/public/printingservice/PrintingServicePage");
+
+const FreePrintingServicePage = () => import(/* webpackChunkName: "console-prefetch", webpackPrefetch: true */
+    "@/console/public/printingservice/FreePrintingServicePage.vue");
 
 Vue.use(Router);
 
@@ -223,11 +229,11 @@ export default new Router({
                 {
                     path: 'packages',
                     name: 'purchase-packages',
-                    component: PackagesSelectPage,
+                    component: FreePackagesPage,
                 }, {
                     path: 'printing-service',
                     name: 'printing-service',
-                    component: PrintingServicePage,
+                    component: FreePrintingServicePage,
                 },
             ]
         },

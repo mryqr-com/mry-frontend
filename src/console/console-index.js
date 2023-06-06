@@ -59,6 +59,7 @@ import {faIdBadge} from '@fortawesome/free-regular-svg-icons/faIdBadge';
 import {faBorderAll} from '@fortawesome/free-solid-svg-icons/faBorderAll';
 import {faChartLine} from '@fortawesome/free-solid-svg-icons/faChartLine';
 import {faSignal} from '@fortawesome/free-solid-svg-icons/faSignal';
+import {faLaptop} from '@fortawesome/free-solid-svg-icons/faLaptop';
 import {faChartPie} from '@fortawesome/free-solid-svg-icons/faChartPie';
 import {faCircleNotch} from '@fortawesome/free-solid-svg-icons/faCircleNotch';
 import {faChartBar} from '@fortawesome/free-solid-svg-icons/faChartBar';
@@ -145,6 +146,7 @@ import MryCustomerServiceEntry from '@/console/common/components/MryCustomerServ
 import MryCustomerServiceText from '@/console/common/components/MryCustomerServiceText';
 import HelpDocLinker from '@/console/common/components/HelpDocLinker';
 import MryDocumentationEntry from '@/console/common/components/MryDocumentationEntry';
+import MryOfficialSiteEntry from '@/console/common/components/MryOfficialSiteEntry';
 import MryMobileEntry from '@/console/common/components/MryMobileEntry';
 import eventBus from '@/common/utils/event-bus';
 import {errorOfApi, isApiErrorResponse} from '@/common/utils/common-utils';
@@ -208,7 +210,7 @@ library.add(faCopy, faTrashAlt, faCaretSquareUp, farCaretSquareDown, faDotCircle
     farStar, faEnvelope, faCalendarMinus, faClock, faCopyright, faGripLines, faCode, faFileCode, faBookOpen,
     faStickyNote, faCog, faList, faBars, faQrcode, faAlignLeft, faAlignCenter, faAlignRight, faStar, faLock, faRobot,
     faSquareRootAlt, faHeading, faParking, faImage, faVideo, faImages, faLink, faFilePdf, faHistory, faAnchor, faCaretSquareDown,
-    faFileAlt, faTable, faBorderAll, faChartLine, faSignal, faChartPie, faCircleNotch, faChartBar, faSortAmountUp, faFont,
+    faFileAlt, faTable, faBorderAll, faChartLine, faSignal, faLaptop, faChartPie, faCircleNotch, faChartBar, faSortAmountUp, faFont,
     faAlignJustify, faAngleDoubleDown, faFileUpload, faCloudUploadAlt, faMapMarkedAlt, faMapMarkerAlt, faCalculator, faTabletAlt,
     faFingerprint, faListOl, faTrafficLight, faCheckSquare, faFileSignature, faUserFriends, faThList, faTools, faCrosshairs, faPlus,
     faMinus, faMobileAlt, faDesktop, faArrowUp, faArrowDown, faSitemap, faClone, faUserCheck, faExternalLinkAlt, faCubes, faShoppingCart,
@@ -300,6 +302,7 @@ Vue.component('MryCustomerServiceEntry', MryCustomerServiceEntry);
 Vue.component('MryCustomerServiceText', MryCustomerServiceText);
 Vue.component('HelpDocLinker', HelpDocLinker);
 Vue.component('MryDocumentationEntry', MryDocumentationEntry);
+Vue.component('MryOfficialSiteEntry', MryOfficialSiteEntry);
 Vue.component('MryMobileEntry', MryMobileEntry);
 Vue.component('ItalicTextButton', ItalicTextButton);
 Vue.component('GeolocationLinkViewer', GeolocationLinkViewer);

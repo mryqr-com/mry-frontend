@@ -26,37 +26,38 @@
           </router-link>
         </li>
 
-        <li :class="$style.menuLi">
-          <router-link :class="$style.link"
-                       :to="{name:'tenant-subdomain-setting'}"
-                       tag="div">
-            域名设置
-          </router-link>
-        </li>
+        <!--free-version-->
+        <!--        <li :class="$style.menuLi">-->
+<!--          <router-link :class="$style.link"-->
+<!--                       :to="{name:'tenant-subdomain-setting'}"-->
+<!--                       tag="div">-->
+<!--            域名设置-->
+<!--          </router-link>-->
+<!--        </li>-->
 
-        <li :class="$style.menuLi">
-          <router-link :class="$style.link"
-                       :to="{name:'tenant-invoice-setting'}"
-                       tag="div">
-            发票抬头
-          </router-link>
-        </li>
+<!--        <li :class="$style.menuLi">-->
+<!--          <router-link :class="$style.link"-->
+<!--                       :to="{name:'tenant-invoice-setting'}"-->
+<!--                       tag="div">-->
+<!--            发票抬头-->
+<!--          </router-link>-->
+<!--        </li>-->
 
-        <li :class="$style.menuLi">
-          <router-link :class="$style.link"
-                       :to="{name:'tenant-consignee-setting'}"
-                       tag="div">
-            收货地址
-          </router-link>
-        </li>
+<!--        <li :class="$style.menuLi">-->
+<!--          <router-link :class="$style.link"-->
+<!--                       :to="{name:'tenant-consignee-setting'}"-->
+<!--                       tag="div">-->
+<!--            收货地址-->
+<!--          </router-link>-->
+<!--        </li>-->
 
-        <li :class="$style.menuLi">
-          <router-link :class="$style.link"
-                       :to="{name:'api-setting'}"
-                       tag="div">
-            API集成
-          </router-link>
-        </li>
+<!--        <li :class="$style.menuLi">-->
+<!--          <router-link :class="$style.link"-->
+<!--                       :to="{name:'api-setting'}"-->
+<!--                       tag="div">-->
+<!--            API集成-->
+<!--          </router-link>-->
+<!--        </li>-->
 
       </ul>
     </div>

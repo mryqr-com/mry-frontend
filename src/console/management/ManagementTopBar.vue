@@ -5,6 +5,12 @@
       <HelpDocLinker v-if="helpUrl" :url="helpUrl" class="baseLineAlign"></HelpDocLinker>
     </div>
     <section :class="$style.rightSection">
+      <MryOfficialSiteEntry :class="$style.rightSectionIcon"
+                            :iconSize="16"
+                            :textSize="12"
+                            color="#909399">
+      </MryOfficialSiteEntry>
+
       <MryCustomerServiceEntry :class="$style.rightSectionIcon"
                                :iconSize="16"
                                :textSize="12"
@@ -17,10 +23,10 @@
                              color="#909399">
       </MryDocumentationEntry>
 
-      <MryMobileEntry :class="$style.rightSectionIcon"
-                      :iconSize="16"
-                      :textSize="12">
-      </MryMobileEntry>
+<!--      <MryMobileEntry :class="$style.rightSectionIcon"-->
+<!--                      :iconSize="16"-->
+<!--                      :textSize="12">-->
+<!--      </MryMobileEntry>-->
       <Profile></Profile>
     </section>
   </div>

@@ -15,9 +15,9 @@
            :class="$style.row"
            class=" marginBottom20">
         <el-button icon="el-icon-edit-outline"
+                   plain
                    size="small"
                    type="primary"
-                   plain
                    @click="editApp">
           编辑应用
         </el-button>
@@ -49,6 +49,12 @@
     </div>
 
     <section :class="$style.rightSection">
+      <MryOfficialSiteEntry :class="$style.rightSectionIcon"
+                            :iconSize="16"
+                            :textSize="12"
+                            color="#909399">
+      </MryOfficialSiteEntry>
+
       <MryCustomerServiceEntry :class="$style.rightSectionIcon"
                                :iconSize="16"
                                :textSize="12"
@@ -61,10 +67,10 @@
                              color="#909399">
       </MryDocumentationEntry>
 
-      <MryMobileEntry :class="$style.rightSectionIcon"
-                      :iconSize="16"
-                      :textSize="12">
-      </MryMobileEntry>
+<!--      <MryMobileEntry :class="$style.rightSectionIcon"-->
+<!--                      :iconSize="16"-->
+<!--                      :textSize="12">-->
+<!--      </MryMobileEntry>-->
       <Profile></Profile>
     </section>
   </div>

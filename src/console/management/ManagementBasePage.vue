@@ -31,16 +31,16 @@
             <span v-if="!fold">应用管理</span>
           </router-link>
         </li>
-
-        <li v-if="isTenantAdmin" :class="$style.menuLi">
-          <router-link :class="[$style.link,{[$style.foldedLink]:fold}]"
-                       :to="{name:'tenant-order-list'}"
-                       tag="div"
-                       title="订单管理">
-            <span :class="[$style.icon,{[$style.foldedIcon]:fold}]"><icon icon="shopping-cart"/></span>
-            <span v-if="!fold">订单管理</span>
-          </router-link>
-        </li>
+        <!--free-version-->
+        <!--        <li v-if="isTenantAdmin" :class="$style.menuLi">-->
+<!--          <router-link :class="[$style.link,{[$style.foldedLink]:fold}]"-->
+<!--                       :to="{name:'tenant-order-list'}"-->
+<!--                       tag="div"-->
+<!--                       title="订单管理">-->
+<!--            <span :class="[$style.icon,{[$style.foldedIcon]:fold}]"><icon icon="shopping-cart"/></span>-->
+<!--            <span v-if="!fold">订单管理</span>-->
+<!--          </router-link>-->
+<!--        </li>-->
 
         <li v-if="isTenantAdmin" :class="$style.menuLi">
           <router-link :class="[$style.link,{[$style.foldedLink]:fold}]"

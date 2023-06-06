@@ -31,25 +31,27 @@
       <div :class="$style.infoValue">{{ info.creator }}</div>
     </div>
 
-    <div :class="$style.row">
-      <div :class="$style.title">当前套餐：</div>
-      <div :class="$style.infoValue">
-        {{ info.packagesName }}
-        <span>（应用{{ info.planMaxAppCount }}个；成员{{ info.planMaxMemberCount }}名；存储空间{{ storageText }}）</span>
-        <el-button :class="$style.textButton"
-                   size="small"
-                   type="text"
-                   @click="gotoPurchasePage">
-          前往套餐购买页面
-        </el-button>
-      </div>
-    </div>
+    <!--free-version-->
+    <!--    <div :class="$style.row">-->
+    <!--      <div :class="$style.title">当前套餐：</div>-->
+    <!--      <div :class="$style.infoValue">-->
+    <!--        {{ info.packagesName }}-->
+    <!--        <span>（应用{{ info.planMaxAppCount }}个；成员{{ info.planMaxMemberCount }}名；存储空间{{ storageText }}）</span>-->
+    <!--        <el-button :class="$style.textButton"-->
+    <!--                   size="small"-->
+    <!--                   type="text"-->
+    <!--                   @click="gotoPurchasePage">-->
+    <!--          前往套餐购买页面-->
+    <!--        </el-button>-->
+    <!--      </div>-->
+    <!--    </div>-->
 
-    <div v-if="info.planType!=='FREE'" :class="$style.row">
-      <div :class="$style.title">套餐过期时间：</div>
-      <div :class="$style.infoValue">{{ formatEpochToDate(info.packagesExpireAt) }}
-      </div>
-    </div>
+    <!--free-version-->
+    <!--    <div v-if="info.planType!=='FREE'" :class="$style.row">-->
+    <!--      <div :class="$style.title">套餐过期时间：</div>-->
+    <!--      <div :class="$style.infoValue">{{ formatEpochToDate(info.packagesExpireAt) }}-->
+    <!--      </div>-->
+    <!--    </div>-->
 
     <div v-if="info.extraMemberCount" :class="$style.row">
       <div :class="$style.title">已增购成员：</div>
@@ -108,6 +110,15 @@
       <div :class="[$style.infoValue]">
         {{ info.usedSmsCountForCurrentMonth }}条 / {{ remainSmsCountForCurrentMonth }}条
       </div>
+    </div>
+
+    <div :class="$style.row">
+      <el-button :class="$style.textButton"
+                 size="small"
+                 type="text"
+                 @click="gotoPurchasePage">
+        免费调整额度
+      </el-button>
     </div>
 
   </div>

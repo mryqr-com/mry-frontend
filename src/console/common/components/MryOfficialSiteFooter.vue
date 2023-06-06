@@ -63,10 +63,11 @@
         <div :class="$style.footerLinksColumn">
           <div :class="$style.footerLinksColumnTitle">联系我们</div>
           <div :class="$style.footerContactContainer">
-            <div :class="$style.footerQrImageContainer">
-              <img :class="$style.footerQrImage" alt="微信公众号" src="/images/public-wx.png"/>
-              <div :class="$style.footerQrText">微信公众号</div>
-            </div>
+<!--如果有微信公众号，则可启用-->
+<!--            <div :class="$style.footerQrImageContainer">-->
+<!--              <img :class="$style.footerQrImage" alt="微信公众号" src="/images/public-wx.png"/>-->
+<!--              <div :class="$style.footerQrText">微信公众号</div>-->
+<!--            </div>-->
 
             <div>
               <img :class="$style.footerQrImage" alt="客服微信" src="/images/customer-service-151.png"/>
@@ -77,11 +78,14 @@
       </div>
 
       <div :class="$style.footerBottomLinksContainer">
-        <a :class="$style.footerTextLink" class=" marginRight15" href="//www.mryqr.com">成都码如云信息技术有限公司</a>
+<!--如果有公司，则可启用-->
+<!--        <a :class="$style.footerTextLink" class=" marginRight15" href="//www.mryqr.com">XXX有限公司</a>-->
+
+<!--todo: 改为个人的ICP备案号和公安备案号-->
         <a :class="$style.footerTextLink" class=" marginLeft15 marginRight15"
            href="https://beian.miit.gov.cn/"
            target="_blank">
-          蜀ICP备2023003447号-1
+          ICP备案号
         </a>
 
         <a :class="$style.footerTextLink"
@@ -89,7 +93,7 @@
            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51015602000526"
            target="_blank">
           <img :class="$style.gongan" alt="公安备案" src="/gongan.png"/>
-          川公网安备 51015602000526号
+          公安备案号
         </a>
       </div>
     </div>
