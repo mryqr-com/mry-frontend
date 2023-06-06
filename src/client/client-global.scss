@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  //解决问题：ios上光标偏上
+  .el-input--medium .el-input__inner {
+    height: auto;
+    line-height: normal;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}
+
+.el-dialog__body {
+  padding: 0 20px;
+}
+
+.el-form-item {
+  margin-bottom: 16px;
+}
+
+.el-form-item__label {
+  margin-top: 10px;
+  line-height: normal;
+  padding-bottom: 2px !important;
+}
+
+.el-message-box {
+  width: 250px !important;
+}
+
+.el-scrollbar {
+  //element-ui 下拉框在ios上 点击两次才能选中
+  > .el-scrollbar__bar {
+    opacity: 1 !important;
+  }
+}
+
+//模态框mask不要动画，否则很难看
+.v-modal, .v-modal-enter, .v-modal-leave {
+  transition: none !important;
+  animation: none !important;
+}
+
+//dialog不要动画，否则很那看
+.el-dialog__wrapper,
+.dialog-fade-enter-active,
+.dialog-fade-leave-active,
+.dialog-fade-enter-active .el-dialog,
+.dialog-fade-leave-active .el-dialog,
+.dialog-fade-enter-active .el-dialog,
+.dialog-fade-leave-active .el-dialog {
+  transition: none !important;
+  animation: none !important;
+}
+
+//messagebox不要动画，否则很难看
+.el-message-box__wrapper, .el-message-box {
+  transition: none !important;
+  animation: none !important;
+}
+
+//让el-dialog和el-drawer的背景是透明的，这样关闭时没有mask，好看一点
+@media (max-width: $mobileScreenBreakpoint), print {
+  .v-modal {
+    background-color: transparent;
+  }
+}

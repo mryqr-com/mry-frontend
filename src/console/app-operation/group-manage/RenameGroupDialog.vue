@@ -1,0 +1,149 @@
+<template>
+  <el-dialog :visible.sync="visible"
+             title="重命名"
+             width="500px"
+             @close="$emit('update:show', false)"
+             @open="init">
+    <el-form ref="theForm"
+             :hide-required-asterisk="true"
+             :model="theModel"
+             :rules="rules"
+             label-position="top"
+             @submit.native.prevent="onSubmit">
+      <el-form-item label="名称：" prop="name">
+        <el-input ref="nameBox"
+                  v-model="theModel.name"
+                  :class="$style.nameInput"
+                  :maxlength="50"
+                  :spellcheck="false"
+                  placeholder="请输入名称"
+                  size="medium">
+        </el-input>
+      </el-form-item>
+    </el-form>
+
+    <div slot="footer">
+      <el-button :class="$style.footerButton"
+                 icon="el-icon-close"
+                 size="medium"
+                 type="plain"
+                 @click="cancel">
+        取消
+      </el-button>
+      <el-button :class="$style.footerButton"
+                 :disabled="apiInProgress"
+                 icon="el-icon-check"
+                 size="medium"
+                 type="primary"
+                 @click="onSubmit">
+        确定
+      </el-button>
+    </div>
+  </el-dialog>
+</template>
+
+<script>
+import {createNamespacedHelpers} from 'vuex';
+import groupApi from '@/common/api/group-api';
+
+const groupManageStore = createNamespacedHelpers('GROUP_MANAGE_STORE');
+const appOperationStore = createNamespacedHelpers('APP_OPERATION_STORE');
+
+export default {
+  props: {
+    show: {
+      type: Boolean,
+      default: false,
+    },
+
+    groupId: {
+      type: String,
+    }
+  },
+
+  data() {
+    return {
+      apiInProgress: false,
+      visible: this.show,
+      theModel: {
+        name: null,
+      },
+
+      rules: {
+        name: [
+          {required: true, message: '请输入名称', trigger: 'change'},
+          {max: 50, message: '名称不能超过50个字符', trigger: 'change'},
+        ],
+      }
+    }
+  },
+
+  watch: {
+    show(val) {
+      this.visible = val;
+    }
+  },
+
+  methods: {
+    ...groupManageStore.mapMutations([
+      'renameGroup',
+    ]),
+
+    ...appOperationStore.mapMutations(['markGroupAsDirty']),
+
+    init() {
+      this.theModel.name = this.groupNameOf(this.groupId);
+      this.apiInProgress = false;
+      this.$nextTick(() => {
+        this.$refs['nameBox'].focus();
+        this.$refs['nameBox'].select();
+        this.$refs['theForm'].clearValidate();
+      });
+    },
+
+    onSubmit() {
+      return this.$refs['theForm'].validate().then(() => {
+        this.apiInProgress = true;
+
+        return groupApi.renameGroup(this.groupId, this.theModel).then(() => {
+          this.visible = false;
+
+          this.$message({
+            type: 'success',
+            message: `重命名成功。`,
+            center: true
+          });
+
+          let groupId = this.groupId;
+          let name = this.theModel.name;
+
+          this.renameGroup({groupId, name});
+          this.markGroupAsDirty();
+        }).finally(() => {
+          this.apiInProgress = false;
+        });
+      });
+    },
+
+    cancel() {
+      this.visible = false;
+    },
+  },
+
+  computed: {
+    ...groupManageStore.mapGetters(['groupNameOf']),
+  },
+}
+</script>
+
+<style lang="scss" module>
+.nameInput {
+  width: 100%;
+}
+
+.footerButton {
+  width: $dialogButtonWidth;
+}
+
+</style>
+

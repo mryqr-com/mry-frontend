@@ -1,0 +1,3 @@
+export default {
+    LIST_MY_ASSIGNMENTS: 'LIST_MY_ASSIGNMENTS',
+}

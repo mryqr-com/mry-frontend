@@ -1,0 +1,137 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  /*让整体页面固定：*/
+  overflow: hidden;
+}
+
+.el-message-box__wrapper {
+  top: 15vh;
+  bottom: auto;
+}
+
+.el-color-picker__trigger {
+  border-radius: 0 !important;
+  border: 1px solid #DCDFE6 !important;
+}
+
+.el-collapse-item__header {
+  line-height: 40px;
+  height: 40px;
+}
+
+.el-input--mini {
+  font-size: 13px;
+}
+
+.el-checkbox__label {
+  font-size: 13px;
+}
+
+.el-checkbox__label {
+  padding-left: 5px;
+}
+
+.el-button--mini {
+  font-size: 13px;
+}
+
+.settingItem {
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  font-size: 13px;
+}
+
+.keyValueSettingContainer {
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.singleLineTitle {
+  display: block;
+  line-height: 1em;
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.singleLineTitleWithSuffix {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.settingMarginBottom {
+  margin-bottom: 10px;
+}
+
+.marginRight15 {
+  margin-right: 15px;
+}
+
+.marginLeft15 {
+  margin-left: 15px;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.rightInputWidth {
+  width: 130px;
+}
+
+.block {
+  display: block;
+}
+
+.el-tooltip__popper {
+  border-radius: 0;
+}
+
+.el-dialog__body {
+  padding: 0 20px;
+}
+
+.el-form-item {
+  margin-bottom: 16px;
+}
+
+.el-form-item__label {
+  margin-top: 10px;
+  line-height: normal;
+  padding-bottom: 2px !important;
+}
+
+.el-form-item:last-child {
+  margin-bottom: 5px;
+}
+
+.el-pagination {
+  button, li, input {
+    background-color: transparent !important;
+  }
+
+  input {
+    border: none;
+  }
+
+  input:hover {
+    color: $primaryThemeColor;
+  }
+}

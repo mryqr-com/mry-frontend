@@ -1,0 +1,87 @@
+<template>
+  <div :class="$style.wrapper">
+    <div :class="$style.filterTitle">{{ fieldName }}</div>
+    <el-select :key="keepStateKey"
+               ref="theSelect"
+               v-model="localOptions"
+               :class="$style.inputSelect"
+               multiple
+               size="small"
+               @change="onOptionChanged('theSelect')">
+      <el-option
+          v-for="option in allOptions"
+          :key="option.id"
+          :label="option.name"
+          :value="option.id">
+      </el-option>
+    </el-select>
+  </div>
+</template>
+
+<script>
+import {createNamespacedHelpers} from "vuex";
+import {controlFieldName} from "@/common/utils/common-utils";
+
+const clientQrSubmissionListStore = createNamespacedHelpers('CLIENT_QR_SUBMISSION_LIST_STORE');
+
+export default {
+  props: ['control'],
+
+  computed: {
+    ...clientQrSubmissionListStore.mapState([
+      'filterables',
+      'keepStateKey',
+    ]),
+
+    fieldName() {
+      return controlFieldName(this.control)
+    },
+
+    allOptions() {
+      return this.control.options;
+    },
+
+    localOptions: {
+      get() {
+        return this.filterables.get(this.control.id);
+      },
+
+      set(options) {
+        let filterable = new Map();
+        filterable.set(this.control.id, options);
+        this.updateFilterables(filterable);
+      }
+    }
+  },
+
+  methods: {
+    ...clientQrSubmissionListStore.mapMutations([
+      'resetInfinite',
+      'updateFilterables',
+    ]),
+
+    onOptionChanged(select) {
+      this.resetInfinite();
+      let _this = this;
+      setTimeout(function () {
+        _this.$refs[select].blur();
+      }, 50);
+    }
+  }
+
+}
+</script>
+
+<style lang="scss" module>
+.wrapper {
+}
+
+.filterTitle {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.inputSelect {
+  width: 100%;
+}
+</style>

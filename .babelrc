@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": false,
+        "corejs": "3",
+        "useBuiltIns": "usage"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "~theme"
+      }
+    ],
+    [
+      "@babel/plugin-syntax-dynamic-import"
+    ]
+  ]
+}

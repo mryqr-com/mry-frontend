@@ -1,0 +1,3 @@
+export default {
+    FETCH_OPERATION_APP: 'FETCH_OPERATION_APP',
+}

@@ -1,0 +1,3 @@
+export default {
+    LIST_MY_MANAGED_MEMBERS: 'LIST_MY_MANAGED_MEMBERS',
+}

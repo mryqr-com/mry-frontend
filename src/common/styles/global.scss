@@ -1,0 +1,427 @@
+@import "reset";
+
+.el-radio-button__inner {
+  font-weight: normal;
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: $primaryTextColor;
+}
+
+.el-radio__label {
+  font-weight: normal;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: $primaryTextColor;
+}
+
+.el-checkbox__label {
+  font-weight: normal;
+}
+
+.el-input__inner {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.el-textarea__inner {
+  padding: 5px 8px !important;
+}
+
+
+.elementInputErrorBordered {
+  .el-input__inner, .el-textarea__inner {
+    border: 1px solid red !important;
+  }
+}
+
+.inputErrorBordered {
+  input, select {
+    border: 1px solid red !important;
+  }
+}
+
+.el-loading-mask {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.el-loading-spinner {
+  width: 40px;
+  height: 40px;
+  background-color: $primaryThemeColor;
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px)
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg)
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.el-loading-spinner svg {
+  display: none;
+}
+
+ul.el-pager .btn-quicknext + li {
+  display: none;
+}
+
+.el-collapse-item__content {
+  color: $regularTextColor;
+}
+
+body {
+  padding-right: 0 !important; //element-ui在打开el-dialog时，会自动将body的padding-right设为15px，特此去除
+}
+
+.el-icon-loading {
+  font-weight: bold;
+}
+
+.el-tooltip__popper {
+  max-width: 500px;
+  line-height: 1.5em;
+}
+
+.baseLineAlign {
+  vertical-align: baseline;
+}
+
+.marginTop30 {
+  margin-top: 30px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+
+.marginTop15 {
+  margin-top: 15px;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.marginTop6 {
+  margin-top: 6px;
+}
+
+.marginTop5 {
+  margin-top: 5px;
+}
+
+.marginTop3 {
+  margin-top: 3px;
+}
+
+.marginTop2 {
+  margin-top: 2px;
+}
+
+.marginTop1 {
+  margin-top: 1px;
+}
+
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+
+.marginBottom30 {
+  margin-bottom: 30px;
+}
+
+.marginBottom40 {
+  margin-bottom: 40px;
+}
+
+.marginBottom50 {
+  margin-bottom: 50px;
+}
+
+.marginBottom15 {
+  margin-bottom: 15px;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.marginBottom6 {
+  margin-bottom: 6px;
+}
+
+.marginBottom5 {
+  margin-bottom: 5px;
+}
+
+.marginBottom3 {
+  margin-bottom: 3px;
+}
+
+.marginBottom2 {
+  margin-bottom: 2px;
+}
+
+.marginBottom1 {
+  margin-bottom: 1px;
+}
+
+.marginRight50 {
+  margin-right: 50px;
+}
+
+.marginRight30 {
+  margin-right: 30px;
+}
+
+.marginRight20 {
+  margin-right: 20px;
+}
+
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.marginRight5 {
+  margin-right: 5px;
+}
+
+.marginLeft10 {
+  margin-left: 10px;
+}
+
+.marginLeft5 {
+  margin-left: 5px;
+}
+
+.paddingTop20 {
+  padding-top: 20px;
+}
+
+.paddingTop15 {
+  padding-top: 15px;
+}
+
+.paddingTop10 {
+  padding-top: 10px;
+}
+
+.paddingTop6 {
+  padding-top: 6px;
+}
+
+.paddingTop5 {
+  padding-top: 5px;
+}
+
+.paddingTop3 {
+  padding-top: 3px;
+}
+
+.paddingTop2 {
+  padding-top: 2px;
+}
+
+.paddingTop1 {
+  padding-top: 1px;
+}
+
+.paddingBottom20 {
+  padding-bottom: 20px;
+}
+
+.paddingBottom15 {
+  padding-bottom: 15px;
+}
+
+.paddingBottom10 {
+  padding-bottom: 10px;
+}
+
+.paddingBottom6 {
+  padding-bottom: 6px;
+}
+
+.paddingBottom5 {
+  padding-bottom: 5px;
+}
+
+.paddingBottom3 {
+  padding-bottom: 3px;
+}
+
+.paddingBottom2 {
+  padding-bottom: 2px;
+}
+
+.paddingBottom1 {
+  padding-bottom: 1px;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.padding15 {
+  padding: 15px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.padding8 {
+  padding: 8px;
+}
+
+.padding6 {
+  padding: 6px;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.padding3 {
+  padding: 3px;
+}
+
+.padding2 {
+  padding: 2px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.padding1 {
+  padding: 1px;
+}
+
+.width150 {
+  width: 150px;
+}
+
+.width130 {
+  width: 130px;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.width200 {
+  width: 200px;
+}
+
+input, textarea {
+  background-color: transparent !important;
+}
+
+.plainButton {
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $primaryTextColor;
+}
+
+.underLinedLink {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.underLinedLink:visited {
+  color: inherit;
+}
+
+.underLinedLink:hover {
+  color: $primaryThemeColor;
+}
+
+.el-message .el-message__content {
+  line-height: 1.3em;
+}
+
+.tableTag {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 12px;
+  padding: 3px 4px;
+  display: flex;
+  align-items: center;
+  line-height: 1.1em;
+  flex-shrink: 0;
+}
+
+.greenTableTag {
+  color: #10b01b;
+  background-color: rgba(16, 176, 27, 0.1);
+}
+
+.blueTableTag {
+  color: #318CE7;
+  background-color: rgba(49, 140, 231, 0.1);
+}
+
+.warnTableTag {
+  color: #E6A23C;
+  background-color: rgba(230, 162, 60, 0.1);
+}
+
+.redTableTag {
+  color: #ea0000;
+  background-color: rgba(234, 0, 0, 0.1);
+}
+
+.yellowTableTag {
+  color: #FF8C00;
+  background-color: rgba(255, 140, 0, 0.1);
+}
+
+.primaryColoredTextLink {
+  color: $primaryThemeColor;
+}
+
+.primaryColoredTextLink:hover {
+  color: $primaryThemeColor;
+  opacity: 80%;
+}
+
+.primaryColoredTextLink:link, .primaryColoredTextLink:visited, .primaryColoredTextLink:active {
+  color: $primaryThemeColor;
+}
+

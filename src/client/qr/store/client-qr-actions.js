@@ -1,0 +1,3 @@
+export default {
+    FETCH_SUBMISSION_QR: 'FETCH_SUBMISSION_QR',
+}

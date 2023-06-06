@@ -1,0 +1,4 @@
+export default {
+    INIT: 'INIT',
+    LIST_MY_MANAGED_PLATE_BATCHES: 'LIST_MY_MANAGED_PLATE_BATCHES',
+}

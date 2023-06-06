@@ -1,0 +1,59 @@
+//全局sass变量,主要用于整个项目的颜色/页面布局风格等
+
+$clientPageZIndex: 100;
+$mobileScreenBreakpoint: 650px;
+$pcScreenBreakpoint: 980px;
+$consoleTopBarHeight: 60px;
+$clientTopBarHeight: 60px;
+$clientIconButtonLength: 40px;
+
+$maxControlContentWidth: 600px;
+$maxControlSelectionWidth: 300px;
+$maxControlButtonWidth: 300px;
+$maxControlInputWidth: 300px;
+
+$narrowPageVPadding: 15px;
+$widePageVPadding: 30px;
+
+$dialogButtonWidth: 120px;
+$pageButtonWidth: 150px;
+
+$formPageMenuHeight: 50px;
+$formPageTopSectionBackgroundColor: rgba(246, 247, 252, 1);
+$formPageInputHeight: 40px;
+
+$defaultFontFamily: 'Arial', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'WenQuanYi Micro Hei', 'STXihei', '华文细黑', 'Georgia', 'Times New Roman', 'sans-serif';
+$primaryThemeColor: #00bfff;
+$oppositeThemeColor: #FF8C00;
+
+$primaryShadow: 0 2px 4px rgba(0, 0, 0, .06);
+$lightShadow: 0 2px 3px rgba(0, 0, 0, .03);
+$imageShadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+$pageShadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+$primaryTextColor: #303133;
+$regularTextColor: #606266;
+$secondaryTextColor: #909399;
+$placeholderTextColor: #C0C4CC;
+
+$primaryBorderColor: #DCDFE6;
+$secondLevelBorderColor: #E4E7ED;
+$thirdLevelBorderColor: #EBEEF5;
+$fourthLevelBorderColor: #F2F6FC;
+
+$primary1pxBorder: 1px solid $primaryBorderColor;
+$secondary1pxBorder: 1px solid $secondLevelBorderColor;
+$light1pxBorder: 1px solid $thirdLevelBorderColor;
+
+$darkBackgroundColor: #e5e5e8;
+$primaryBackgroundColor: #eff1f1;
+$lightBackgroundColor: #f5f5f5;
+$whiteBackgroundColor: #ffffff;
+
+$leftBarBackgroundColor: #1b1b1b;
+$leftBarTextColor: #e7e7e7;
+
+$normalBlue: #318CE7;
+$rejectRed: #ea0000;
+$passGreen: #10b01b;
+$warningYellow: #E6A23C;
