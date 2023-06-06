@@ -43,14 +43,15 @@
           密码登录
         </span>
 
-        <span v-if="!wxIdInfo && !isInWx()"
-              :class="[$style.textButton,$style.pcWxLogin]"
-              class="underLinedLink"
-              title="用手机微信扫描二维码登录"
-              type="text"
-              @click="startPcWxLogin">
-          <img :class="$style.wxLogo" :src="wxLogoUrl" alt="微信登录">&nbsp;微信扫码登录
-        </span>
+<!--        todo: 如需微信扫码登录，可启用以下代码-->
+<!--        <span v-if="!wxIdInfo && !isInWx()"-->
+<!--              :class="[$style.textButton,$style.pcWxLogin]"-->
+<!--              class="underLinedLink"-->
+<!--              title="用手机微信扫描二维码登录"-->
+<!--              type="text"-->
+<!--              @click="startPcWxLogin">-->
+<!--          <img :class="$style.wxLogo" :src="wxLogoUrl" alt="微信登录">&nbsp;微信扫码登录-->
+<!--        </span>-->
 
         <span v-if="loginType==='MobileOrEmailLogin'"
               :class="[$style.textButton]"
@@ -115,19 +116,21 @@ export default {
     loginApi.refreshToken().then(() => {
       this.gotoFromUrl();
     }).catch(() => {
-      if (isInWx() && isCurrentUsingDomainName() && !this.wxIdInfo && !this.forcePageLogin) {
-        return commonApi.fetchMobileWxInfo().then((response) => {
-          let mobileWxInfo = response.data;
-          const mobileWxRedirectUrl = encodeURIComponent(mobileWxInfo.mobileAuthRedirectUrl);
-          let mobileWxAuthUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${mobileWxInfo.mobileAppId}&redirect_uri=${mobileWxRedirectUrl}&response_type=code&scope=snsapi_userinfo#wechat_redirect`;
-          location.replace(mobileWxAuthUrl);
-        });
-      }
+      // todo： 如需在手机微信中启用无密码优先登录，可启用以下代码
+      // if (isInWx() && isCurrentUsingDomainName() && !this.wxIdInfo && !this.forcePageLogin) {
+      //   return commonApi.fetchMobileWxInfo().then((response) => {
+      //     let mobileWxInfo = response.data;
+      //     const mobileWxRedirectUrl = encodeURIComponent(mobileWxInfo.mobileAuthRedirectUrl);
+      //     let mobileWxAuthUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${mobileWxInfo.mobileAppId}&redirect_uri=${mobileWxRedirectUrl}&response_type=code&scope=snsapi_userinfo#wechat_redirect`;
+      //     location.replace(mobileWxAuthUrl);
+      //   });
+      // }
 
-      if (this.defaultToWx && !this.forcePageLogin) {
-        this.startPcWxLogin();
-        return;
-      }
+      //todo： 如需在有defaultToWx参数时直接微信扫码登录，可启用以下代码
+      // if (this.defaultToWx && !this.forcePageLogin) {
+      //   this.startPcWxLogin();
+      //   return;
+      // }
 
       if (isSubdomainCustomized()) {
         let subdomainPrefix = currentSubdomainPrefix();

@@ -33,16 +33,18 @@
         <div :class="$style.infoValue">
           <span :style="wxStyle">{{ wxBoundText }}</span>
           <span>{{ wxBoundNickname }}</span>
-          <el-button v-if="info.wxBound"
-                     :class="$style.wxButton"
-                     size="mini"
-                     @click="unbindWx">解绑微信
-          </el-button>
-          <el-button v-else
-                     :class="$style.wxButton"
-                     size="mini"
-                     @click="bindWx">去绑定
-          </el-button>
+
+<!--          todo: 如果启用了微信公众号，可以启用以下代码-->
+<!--          <el-button v-if="info.wxBound"-->
+<!--                     :class="$style.wxButton"-->
+<!--                     size="mini"-->
+<!--                     @click="unbindWx">解绑微信-->
+<!--          </el-button>-->
+<!--          <el-button v-else-->
+<!--                     :class="$style.wxButton"-->
+<!--                     size="mini"-->
+<!--                     @click="bindWx">去绑定-->
+<!--          </el-button>-->
         </div>
       </div>
     </section>

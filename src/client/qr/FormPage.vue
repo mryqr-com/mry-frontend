@@ -290,6 +290,8 @@ export default {
 
   mounted() {
     if (isInWx()) {
+      return;//todo: 如果启用了微信公众号，可删除此行，已让以下代码得以执行
+
       let url = location.href.split('#')[0];
       commonApi.fetchWxJsSdkConfig(url).then(response => {
         let config = response.data;
