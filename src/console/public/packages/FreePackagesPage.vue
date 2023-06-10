@@ -18,12 +18,12 @@
       <img :class="$style.donationImage" alt="给滕云赞赏" src="/images/donation.jpeg"/>
 
       <div :class="$style.contentLine">
-        软件开发者可能感兴趣：码如云的源代码是开源的，源码地址：<a class="primaryColoredTextLink"
+        以下内容对软件开发者可能有用：码如云的源代码是开源的，Github地址：<a class="primaryColoredTextLink"
                                                                 target="_blank"
-                                                                href="https://github.com/mryqr-com">https://github.com/mryqr-com</a>，
+                                                                href="https://github.com/mryqr-com">https://github.com/mryqr-com</a>。
         作者滕云是<a class="primaryColoredTextLink"
                      target="_blank"
-                     href="https://book.douban.com/subject/25844633/">《实现领域驱动设计》</a>一书的译者。在码如云的开发过程中，作者全程使用了领域驱动设计（Domain
+                     href="https://book.douban.com/subject/25844633/">《实现领域驱动设计》</a>一书的译者，在码如云的开发过程中，作者全程使用了领域驱动设计（Domain
         Driven Design，DDD）、事件驱动架构（Event Driven Architecture，EDA）和整洁架构（Clean Architecture）等软件思想完成软件的设计与编码。
       </div>
     </div>
@@ -70,7 +70,7 @@ export default {
 .contentLine {
   font-size: 16px;
   line-height: 1.6em;
-  margin: auto auto 30px;
+  margin: auto auto 24px;
 }
 
 .freeText {
@@ -89,7 +89,7 @@ export default {
 .donationImage {
   max-width: 250px;
   display: block;
-  margin: auto auto 30px;
+  margin: 40px auto;
 }
 
 .customerService {
