@@ -85,7 +85,7 @@
         <a :class="$style.footerTextLink" class=" marginLeft15 marginRight15"
            href="https://beian.miit.gov.cn/"
            target="_blank">
-          ICP备案号
+          蜀ICP备2023014150号-1
         </a>
 
         <a :class="$style.footerTextLink"

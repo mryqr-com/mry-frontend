@@ -20,4 +20,4 @@ tmp.html
 
 deploy/
 prod-deploy.sh
-
+ossutil_output/
