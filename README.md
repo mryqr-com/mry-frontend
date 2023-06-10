@@ -30,5 +30,3 @@
 - 根据需要修改 `element-variables.scss` 文件
 - 运行 `./customize-element.sh`
 
-## 注意事项
-- 本地访问时需要使用域名进行访问，因为调用API时是通过域名解算出API地址的，即比如域名为`console.local.mryqr.com`，那么API地址则为`api.local.mryqr.com`，详情请参考`common-axios.js`中的`apiBaseUrl()`方法

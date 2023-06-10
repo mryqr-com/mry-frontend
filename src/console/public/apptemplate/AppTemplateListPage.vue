@@ -2,7 +2,7 @@
   <div :class="$style.wrapper">
     <section :class="$style.headerSection">
       <Logo :class="$style.logo" size="small" @click="onLogoClick"></Logo>
-      <div :id="scrollRefId" :class="$style.sectionTitle">应用模板库</div>
+      <div :id="scrollRefId" :class="$style.sectionTitle">码如云应用模板库</div>
       <div :class="$style.subSectionTitle">选择适合您的应用模板，快速搭建应用，省时省心</div>
       <div :class="$style.searchContainer">
         <el-input v-model="search"
@@ -99,7 +99,7 @@
                           :key="feature"
                           :class="$style.feature">{{ feature }}</span>
 
-                    <span :class="$style.planType" class="blueTableTag">{{ planTypeText(template) }}</span>
+<!--                    <span :class="$style.planType" class="blueTableTag"></span>-->
                   </div>
                 </div>
               </div>
@@ -565,6 +565,7 @@ export default {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: right;
+  min-height: 15px;
 }
 
 .feature {

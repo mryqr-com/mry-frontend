@@ -410,7 +410,7 @@
             <el-checkbox v-model="localSetting.notificationSetting.notificationEnabled"
                          class="settingMarginBottom block"
                          size="mini"
-                         title="开启提醒功能后，指定人员可以在微信中收到表单提交或更新提醒（需关注码如云官方公众号才能收到提醒）">
+                         title="开启提醒功能后，指定人员可以在微信中收到表单提交或更新提醒">
               启用提交后提醒功能
             </el-checkbox>
 
