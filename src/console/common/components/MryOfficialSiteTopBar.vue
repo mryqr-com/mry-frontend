@@ -8,9 +8,9 @@
         </a>
 
         <a :class="$style.link" href="//www.mryqr.com">产品简介</a>
-        <a :class="$style.link" href="/public/packages" target="_blank">服务价格</a>
+<!--        <a :class="$style.link" href="/public/packages" target="_blank">服务价格</a>-->
         <a :class="$style.link" href="/public/app-templates" target="_blank">应用模板</a>
-        <a :class="$style.link" href="/public/printing-service" target="_blank">印刷服务</a>
+<!--        <a :class="$style.link" href="/public/printing-service" target="_blank">印刷服务</a>-->
         <a :class="$style.link" href="//docs.mryqr.com" target="_blank">文档中心</a>
       </div>
       <div :class="$style.rightPart">

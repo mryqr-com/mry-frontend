@@ -8,9 +8,6 @@
 
 <!--todo: 加入打赏二维码-->
 
-      <div :class="$style.contentLine">
-        如有意开展商务合作，比如源代码采购等，请联系码如云客服。
-      </div>
     </div>
 
     <MryOfficialSiteFooter :class="$style.footer"></MryOfficialSiteFooter>
