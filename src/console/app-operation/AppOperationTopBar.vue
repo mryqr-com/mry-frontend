@@ -67,10 +67,10 @@
                              color="#909399">
       </MryDocumentationEntry>
 
-<!--      <MryMobileEntry :class="$style.rightSectionIcon"-->
-<!--                      :iconSize="16"-->
-<!--                      :textSize="12">-->
-<!--      </MryMobileEntry>-->
+      <MryMobileEntry :class="$style.rightSectionIcon"
+                      :iconSize="16"
+                      :textSize="12">
+      </MryMobileEntry>
       <Profile></Profile>
     </section>
   </div>
