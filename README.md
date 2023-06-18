@@ -30,8 +30,8 @@
 - 运行 `npm install` 安装依赖
 - 运行`./local-run.sh`，此命令用于启动前端
 - 下载[后端代码](https://github.com/mryqr-com/mry-backend)到本地，命令行切换到后端代码根目录，执行`./local-run.sh`，此命令用于启动后端
-- 访问电脑端：http://console.local.mryqr.com，默认用户名`15111111111`，密码`11111111`
-- 访问手机端：http://m.local.mryqr.com，默认用户名`15111111111`，密码`11111111`
+- 访问电脑端：[http://console.local.mryqr.com](http://console.local.mryqr.com)，默认用户名`15111111111`，密码`11111111`
+- 访问手机端：[http://m.local.mryqr.com](http://m.local.mryqr.com)，默认用户名`15111111111`，密码`11111111`
 
 ## 修改ElementUI主题
 - 根据需要修改 `element-variables.scss` 文件
