@@ -24,7 +24,9 @@
         作者滕云是<a class="primaryColoredTextLink"
                      target="_blank"
                      href="https://book.douban.com/subject/25844633/">《实现领域驱动设计》</a>一书的译者，在码如云的开发过程中，作者全程使用了领域驱动设计（Domain
-        Driven Design，DDD）、整洁架构（Clean Architecture）和事件驱动架构（Event Driven Architecture，EDA）等软件思想完成软件的设计与编码。
+        Driven Design，DDD）、整洁架构（Clean Architecture）和事件驱动架构（Event Driven Architecture，EDA）等软件思想完成软件的设计与编码，更多信息可参考滕云的<a class="primaryColoredTextLink"
+                                                                                                                                                          target="_blank"
+                                                                                                                                                          href="//docs.mryqr.com/ddd-introduction/">DDD落地文章系列</a>。
       </div>
     </div>
 
