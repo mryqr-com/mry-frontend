@@ -102,7 +102,10 @@ export default {
 }
 
 .footer {
-  margin-top: 150px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media (max-width: $mobileScreenBreakpoint) {
