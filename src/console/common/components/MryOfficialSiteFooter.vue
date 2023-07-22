@@ -81,7 +81,6 @@
 <!--如果有公司，则可启用-->
 <!--        <a :class="$style.footerTextLink" class=" marginRight15" href="//www.mryqr.com">XXX有限公司</a>-->
 
-<!--todo: 改为个人的ICP备案号和公安备案号-->
         <a :class="$style.footerTextLink" class=" marginLeft15 marginRight15"
            href="https://beian.miit.gov.cn/"
            target="_blank">
@@ -93,7 +92,7 @@
            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51015602000526"
            target="_blank">
           <img :class="$style.gongan" alt="公安备案" src="/gongan.png"/>
-          公安备案号
+          川公网安备 51015602000526号
         </a>
       </div>
     </div>
