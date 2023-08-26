@@ -12,7 +12,7 @@
 ## 为什么开发码如云
 - 为了开发出一款能让自己满意的软件
 - 为了证明DDD能够真实落地
-- 更多信息请参考笔者的文章[构建自己的软件大厦](https://zhuanlan.zhihu.com/p/637899334)
+- 更多信息请参考笔者的文章[构建自己的软件大厦](https://docs.mryqr.com/build-your-own-software-skyscraper/)
 
 
 ## 本地环境搭建
