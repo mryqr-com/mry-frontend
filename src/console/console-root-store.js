@@ -62,7 +62,8 @@ export default new Vuex.Store({
         },
 
         isMobileIdentified(state) {
-            return state.myProfile.mobileIdentified;
+            // return state.myProfile.mobileIdentified;
+            return true;//skip mobile identification as it's not user friendly, only for 'free' version
         },
 
         tenantName(state, getters) {
