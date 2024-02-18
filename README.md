@@ -35,10 +35,6 @@
 - 访问电脑端：[http://console.local.mryqr.com](http://console.local.mryqr.com)，默认用户名`15111111111`，密码`11111111`；
 - 访问手机端：[http://m.local.mryqr.com](http://m.local.mryqr.com)，默认用户名`15111111111`，密码`11111111`；
 
-## 修改ElementUI主题
-- 根据需要修改 `element-variables.scss` 文件；
-- 运行 `./customize-element.sh`。
-
 
 ## 关于软件协议
 本代码库旨在促进软件从业者之间的技术学习和交流，出于此目的您可以自由复制、修改和分享该代码库。另外，需要明确指出的是，本代码库在遵循GPL-3.0协议的基础上，禁止将源代码以任何形式（包括但不限于直接使用或者在原代码基础上修改）进行商业化操作。
