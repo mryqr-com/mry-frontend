@@ -11,7 +11,7 @@
              :rules="rules"
              label-position="top"
              @submit.native.prevent="onSubmit">
-      <el-form-item label="应用名称：" prop="name">
+      <el-form-item label="请输入应用名称：" prop="name">
         <el-input ref="nameBox"
                   v-model="addFormData.name"
                   :class="$style.nameInput"
@@ -24,7 +24,7 @@
     </el-form>
 
     <div slot="footer" :class="$style.footer">
-      <el-button :class="$style.appTemplateButton" type="text" @click="gotoAppTemplatePage">应用模板库</el-button>
+      从<el-button :class="$style.appTemplateButton" type="text" @click="gotoAppTemplatePage">应用模板库</el-button>快速复制应用
 
       <div :class="$style.buttonSection">
         <el-button :class="$style.footerButton"

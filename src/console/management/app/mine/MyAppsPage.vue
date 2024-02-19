@@ -84,6 +84,12 @@
               <i class="el-icon-plus"></i>
               新建应用
             </el-button>
+            <div :class="$style.shortcut">或者，您也可以从
+              <el-button :class="$style.appTemplateButton" type="text" @click="gotoAppTemplatePage">
+                应用模板库
+              </el-button>
+              快速复制现成应用
+            </div>
           </div>
           <div v-else :class="$style.emptyText">您当前没有可用的应用!</div>
         </div>
@@ -161,6 +167,10 @@ export default {
       'deleteToppedApp',
       'loadMyAppsCache',
     ]),
+
+    gotoAppTemplatePage() {
+      this.$router.push({name: 'app-templates'});
+    },
 
     onAppCreated({appId, name}) {
       this.$router.push({
@@ -400,6 +410,7 @@ $pagination-height: 48px;
 }
 
 .emptyImageContainer {
+  margin: auto;
   background-position: center center;
   background-size: cover;
   width: 200px;
@@ -418,6 +429,15 @@ $pagination-height: 48px;
 
 .addAppButton {
   width: 200px;
+}
+
+.shortcut {
+  margin-top: 15px;
+}
+
+.appTemplateButton span {
+  text-decoration: underline;
+  font-weight: normal;
 }
 
 </style>
