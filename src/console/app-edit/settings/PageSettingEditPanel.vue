@@ -156,7 +156,7 @@
                 <el-checkbox v-model="localSetting.approvalSetting.notifySubmitter"
                              class="settingMarginBottom block"
                              size="mini"
-                             title="将审批结果通过微信消息通知提交者">
+                             title="将审批结果通过邮件通知提交者">
                   将审批结果通知提交者
                 </el-checkbox>
               </template>
@@ -410,7 +410,7 @@
             <el-checkbox v-model="localSetting.notificationSetting.notificationEnabled"
                          class="settingMarginBottom block"
                          size="mini"
-                         title="开启提醒功能后，指定人员可以在微信中收到表单提交或更新提醒">
+                         title="开启提醒功能后，指定人员可以收到表单提交或更新提醒的邮件">
               启用提交后提醒功能
             </el-checkbox>
 

@@ -103,7 +103,7 @@
       </el-form-item>
 
       <el-checkbox v-model="internalPlanSetting.nearExpireNotifyEnabled"
-                   :title="`启用后，在设定的即将超期时间到达时，任务执行人将收到微信消息提醒`"
+                   :title="`启用后，在设定的即将超期时间到达时，任务执行人将收到提醒邮件`"
                    size="medium">
         启用即将超期提醒
       </el-checkbox>
@@ -318,7 +318,7 @@ export default {
         并于${this.formatTime(this.timeOf(this.internalPlanSetting.expireTime))}结束。`;
 
       let notifyText = this.internalPlanSetting.nearExpireNotifyEnabled && this.isDateTimeValid(this.internalPlanSetting.nearExpireNotifyTime) ?
-          `任务执行人会在${this.formatTime(this.timeOf(this.internalPlanSetting.nearExpireNotifyTime))}收到任务即将超期的微信提醒。` : ``;
+          `任务执行人会在${this.formatTime(this.timeOf(this.internalPlanSetting.nearExpireNotifyTime))}收到任务即将超期的邮件提醒。` : ``;
       return assignmentText + notifyText;
     },
 
@@ -328,7 +328,7 @@ export default {
 
       let notifyText = this.internalPlanSetting.nearExpireNotifyEnabled && this.isDateTimeValid(this.internalPlanSetting.nearExpireNotifyTime) ?
           `任务执行人会在
-          ${this.formatTime(this.nextTime(this.timeOf(this.internalPlanSetting.nearExpireNotifyTime), this.internalPlanSetting.frequency))}收到任务即将超期的微信提醒。`
+          ${this.formatTime(this.nextTime(this.timeOf(this.internalPlanSetting.nearExpireNotifyTime), this.internalPlanSetting.frequency))}收到任务即将超期的邮件提醒。`
           : ``;
       return assignmentText + notifyText;
     },

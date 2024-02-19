@@ -42,9 +42,9 @@
           取消部门管理员
         </el-dropdown-item>
 
-        <el-dropdown-item v-show="member.wxUnionId" command="unbindWx" title="解绑成员微信">
-          解绑微信
-        </el-dropdown-item>
+<!--        <el-dropdown-item v-show="member.wxUnionId" command="unbindWx" title="解绑成员微信">-->
+<!--          解绑微信-->
+<!--        </el-dropdown-item>-->
 
         <el-dropdown-item v-if="member.active" command="deactivate" title="禁用">
           禁用

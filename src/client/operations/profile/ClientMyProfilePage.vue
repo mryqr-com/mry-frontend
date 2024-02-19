@@ -86,16 +86,16 @@
         <i :class="$style.buttonRowRightArrow" class="majoricon i-right"/>
       </button>
 
-      <button v-if="info.wxBound"
-              :class="$style.buttonRow"
-              class="plainButton"
-              @click="unbindWx">
-        <span :class="$style.buttonRowLeftTitle">
-          <i :class="$style.buttonRowIcon" class="majoricon i-api"/>
-          解绑微信{{ wxNickName }}
-        </span>
-        <i :class="$style.buttonRowRightArrow" class="majoricon i-right"/>
-      </button>
+<!--      <button v-if="info.wxBound"-->
+<!--              :class="$style.buttonRow"-->
+<!--              class="plainButton"-->
+<!--              @click="unbindWx">-->
+<!--        <span :class="$style.buttonRowLeftTitle">-->
+<!--          <i :class="$style.buttonRowIcon" class="majoricon i-api"/>-->
+<!--          解绑微信{{ wxNickName }}-->
+<!--        </span>-->
+<!--        <i :class="$style.buttonRowRightArrow" class="majoricon i-right"/>-->
+<!--      </button>-->
 
       <button :class="$style.buttonRow"
               class="plainButton"
