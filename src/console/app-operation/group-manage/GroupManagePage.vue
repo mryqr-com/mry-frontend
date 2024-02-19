@@ -491,11 +491,11 @@ $sectionPadding: 15px;
 }
 
 .leftSection {
-  min-width: 160px;
-  width: 280px;
+  width: 250px;
   height: 100%;
   background-color: white;
-  flex-grow: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding-top: $sectionPadding;
   padding-bottom: $sectionPadding;
 }
@@ -609,7 +609,7 @@ $sectionPadding: 15px;
 
 .rightSection {
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 0;
   margin-left: $sectionGutter;
   height: 100%;
 }
@@ -643,10 +643,9 @@ $sectionPadding: 15px;
 
 .memberListSection {
   margin-left: 15px;
-  min-width: 200px;
-  width: 280px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 </style>

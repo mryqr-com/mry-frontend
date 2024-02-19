@@ -401,11 +401,11 @@ $dept-top-height: 100px;
 }
 
 .departmentSection {
-  min-width: 160px;
-  width: 280px;
+  width: 300px;
   height: 100%;
   background-color: white;
-  flex-grow: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding-top: $sectionPadding;
   padding-bottom: $sectionPadding;
   border-right: $primary1pxBorder;

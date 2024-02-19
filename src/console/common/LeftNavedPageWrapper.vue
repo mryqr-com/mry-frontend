@@ -2,10 +2,11 @@
   <div :class="$style.wrapper">
     <div :class="$style.leftSection" :style="leftSectionStyle">
       <div :class="$style.foldContainer">
-        <button :class="$style.foldButton" @click="toggleFold">
-          <i v-if="fold" :class="$style.foldIcon" class="el-icon-d-arrow-right"></i>
-          <i v-if="!fold" :class="$style.foldIcon" class="el-icon-d-arrow-left"></i>
-        </button>
+        <!--      由于fold前后将导致QR分组管理页的table变大后无法变小，故隐藏-->
+        <!--        <button :class="$style.foldButton" @click="toggleFold">-->
+        <!--          <i v-if="fold" :class="$style.foldIcon" class="el-icon-d-arrow-right"></i>-->
+        <!--          <i v-if="!fold" :class="$style.foldIcon" class="el-icon-d-arrow-left"></i>-->
+        <!--        </button>-->
       </div>
 
       <div :class="$style.logoArea">
