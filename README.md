@@ -34,7 +34,7 @@
 - 下载[码如云后端代码](https://github.com/mryqr-com/mry-backend)到本地，命令行切换到后端代码根目录，执行`./local-run.sh`，此命令用于启动后端；
 - 访问电脑端：[http://console.local.mryqr.com](http://console.local.mryqr.com)，默认用户名`15111111111`，密码`11111111`；
 - 访问手机端：[http://m.local.mryqr.com](http://m.local.mryqr.com)，默认用户名`15111111111`，密码`11111111`；
-
+- 请不要在同一个浏览器中同时访问本地环境（http://console.local.mryqr.com）和码如云在线环境（https://www.mryqr.com），因为有可能导致本地环境无法访问；
 
 ## 关于软件协议
 本代码库旨在促进软件从业者之间的技术学习和交流，出于此目的您可以自由复制、修改和分享该代码库。另外，需要明确指出的是，本代码库在遵循GPL-3.0协议的基础上，禁止将源代码以任何形式（包括但不限于直接使用或者在原代码基础上修改）进行商业化操作。
