@@ -28,13 +28,13 @@
         <div :class="$style.infoValue">{{ info.departments.join(', ') }}</div>
       </div>
 
-      <div :class="$style.row">
-        <div :class="$style.title">微信：</div>
-        <div :class="$style.infoValue">
-          <span :style="wxStyle">{{ wxBoundText }}</span>
-          <span>{{ wxBoundNickname }}</span>
+      <!--          todo: 如果启用了微信公众号，可以启用以下代码-->
+      <!--      <div :class="$style.row">-->
+<!--        <div :class="$style.title">微信：</div>-->
+<!--        <div :class="$style.infoValue">-->
+<!--          <span :style="wxStyle">{{ wxBoundText }}</span>-->
+<!--          <span>{{ wxBoundNickname }}</span>-->
 
-<!--          todo: 如果启用了微信公众号，可以启用以下代码-->
 <!--          <el-button v-if="info.wxBound"-->
 <!--                     :class="$style.wxButton"-->
 <!--                     size="mini"-->
@@ -45,8 +45,8 @@
 <!--                     size="mini"-->
 <!--                     @click="bindWx">去绑定-->
 <!--          </el-button>-->
-        </div>
-      </div>
+<!--        </div>-->
+<!--      </div>-->
     </section>
     <section :class="$style.avatarSection">
       <Avatar v-if="!localAvatar" :avatar="null" :class="$style.placeHolderAvatar"></Avatar>
