@@ -53,20 +53,20 @@
     <!--      </div>-->
     <!--    </div>-->
 
-    <div v-if="info.extraMemberCount" :class="$style.row">
-      <div :class="$style.title">已增购成员：</div>
-      <div :class="$style.infoValue">{{ info.extraMemberCount }}名</div>
-    </div>
+<!--    <div v-if="info.extraMemberCount" :class="$style.row">-->
+<!--      <div :class="$style.title">已增购成员：</div>-->
+<!--      <div :class="$style.infoValue">{{ info.extraMemberCount }}名</div>-->
+<!--    </div>-->
 
-    <div v-if="info.extraStorage" :class="$style.row">
-      <div :class="$style.title">已增购存储空间：</div>
-      <div :class="$style.infoValue">{{ info.extraStorage }}G</div>
-    </div>
+<!--    <div v-if="info.extraStorage" :class="$style.row">-->
+<!--      <div :class="$style.title">已增购存储空间：</div>-->
+<!--      <div :class="$style.infoValue">{{ info.extraStorage }}G</div>-->
+<!--    </div>-->
 
-    <div v-if="info.extraRemainSmsCount" :class="$style.row">
-      <div :class="$style.title">剩余增购短信量：</div>
-      <div :class="$style.infoValue">{{ info.extraRemainSmsCount }}条</div>
-    </div>
+<!--    <div v-if="info.extraRemainSmsCount" :class="$style.row">-->
+<!--      <div :class="$style.title">剩余增购短信量：</div>-->
+<!--      <div :class="$style.infoValue">{{ info.extraRemainSmsCount }}条</div>-->
+<!--    </div>-->
 
     <div :class="$style.row">
       <div :class="$style.title">应用额度<span :class="$style.supportText">（已使用/总量）</span>：</div>
