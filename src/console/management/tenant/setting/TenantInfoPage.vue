@@ -113,12 +113,13 @@
     </div>
 
     <div :class="$style.row">
-      <el-button :class="$style.textButton"
-                 size="small"
-                 type="text"
-                 @click="gotoPurchasePage">
-        免费调整额度
-      </el-button>
+<!--      <el-button :class="$style.textButton"-->
+<!--                 size="small"-->
+<!--                 type="text"-->
+<!--                 @click="gotoPurchasePage">-->
+<!--        免费调整额度-->
+<!--      </el-button>-->
+      如果额度不够用，可联系码如云客服为你调高额度。
     </div>
 
   </div>
