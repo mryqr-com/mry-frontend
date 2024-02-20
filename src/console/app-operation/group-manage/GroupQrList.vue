@@ -54,6 +54,7 @@
 
     <div :class="$style.tableContainer">
       <el-table ref="listTable"
+                :key="thePageIndex"
                 :class="$style.theTable"
                 :data="displayQrs"
                 :height="tableHeight"
@@ -452,8 +453,6 @@ $titleBarHeight: 60px;
 }
 
 .theTable {
-  width: 100%;
-
   :global {
     th {
       color: $primaryTextColor;
