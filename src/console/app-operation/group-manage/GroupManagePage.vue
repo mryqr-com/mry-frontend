@@ -491,7 +491,7 @@ $sectionPadding: 15px;
 }
 
 .leftSection {
-  width: 250px;
+  width: 280px;
   height: 100%;
   background-color: white;
   flex-grow: 0;
@@ -643,7 +643,7 @@ $sectionPadding: 15px;
 
 .memberListSection {
   margin-left: 15px;
-  width: 250px;
+  width: 280px;
   flex-grow: 0;
   flex-shrink: 0;
 }

@@ -258,8 +258,8 @@ $titleBarHeight: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   cursor: pointer;
 }
 
