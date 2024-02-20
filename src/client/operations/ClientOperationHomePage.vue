@@ -1,9 +1,9 @@
 <template>
   <div v-if="profileLoaded" :class="$style.wrapper">
     <router-view :key="clientHomePageRefreshKey"></router-view>
-    <MrySupportFooter :class="$style.footer"
-                      :shouldHideBottomMryLogo="shouldHideBottomMryLogo">
-    </MrySupportFooter>
+    <!--    <MrySupportFooter :class="$style.footer"-->
+    <!--                      :shouldHideBottomMryLogo="shouldHideBottomMryLogo">-->
+    <!--    </MrySupportFooter>-->
   </div>
 </template>
 

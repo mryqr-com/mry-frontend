@@ -1,9 +1,9 @@
 <template>
   <div v-if="loaded" :class="$style.wrapper">
     <router-view :key="$route.path"></router-view>
-    <MrySupportFooter :class="$style.footer"
-                      :shouldHideBottomMryLogo="shouldHideBottomMryLogo">
-    </MrySupportFooter>
+    <!--    <MrySupportFooter :class="$style.footer"-->
+    <!--                      :shouldHideBottomMryLogo="shouldHideBottomMryLogo">-->
+    <!--    </MrySupportFooter>-->
   </div>
 </template>
 
