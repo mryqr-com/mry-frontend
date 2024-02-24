@@ -113,6 +113,20 @@
     </div>
 
     <div :class="$style.row">
+      <div :class="$style.title">单应用下最大分组数：</div>
+      <div :class="[$style.infoValue]">
+        {{ info.effectiveMaxGroupCountPerApp }}个
+      </div>
+    </div>
+
+    <div :class="$style.row">
+      <div :class="$style.title">最大部门数：</div>
+      <div :class="[$style.infoValue]">
+        {{ info.effectiveMaxDepartmentCount }}个
+      </div>
+    </div>
+
+    <div :class="$style.row">
 <!--      <el-button :class="$style.textButton"-->
 <!--                 size="small"-->
 <!--                 type="text"-->
