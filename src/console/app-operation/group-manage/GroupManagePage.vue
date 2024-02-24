@@ -122,7 +122,7 @@
       </div>
       <div :class="$style.groupContentContainer">
         <GroupQrList :class="$style.qrListSection" :groupData="groupData"></GroupQrList>
-        <GroupMemberList :class="$style.memberListSection"></GroupMemberList>
+        <GroupMemberList :key="qrsPageIndex" :class="$style.memberListSection"></GroupMemberList>
       </div>
     </section>
 
@@ -222,6 +222,7 @@ export default {
       'currentGroupId',
       'isGroupVisible',
       'departmentSynced',
+      'qrsPageIndex',
     ]),
 
     addFirstLevelGroupTitle() {
