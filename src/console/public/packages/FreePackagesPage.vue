@@ -3,16 +3,16 @@
     <div :class="$style.content">
       <div :class="$style.planTitle">服务价格</div>
       <div :class="$style.contentLine">
-        使用码如云是<span :class="$style.freeText">免费</span>的，系统为每个租户提供固定额度的资源用量（包括应用数量、表单提交量以及文件存储空间等），这些限额对于大多数用户来说已经足够，具体限额值请参考系统后台的"账户设置"页面。
+        使用码如云是<span :class="$style.freeText">免费</span>的，系统默认为每个租户提供固定额度的资源用量（包括应用数量、表单提交量以及文件存储空间等），这些限额对于大多数用户来说已经足够，具体限额值可在系统后台的"账户设置"页面进行查看。如果后期发现额度不够用，也可联系码如云客服，我们可为您调整相应额度。
       </div>
-      <div :class="$style.contentLine">
-        除此之外，您也可以自行下载码如云的源代码(
-        <a class="primaryColoredTextLink"
-           target="_blank"
-           href="https://github.com/mryqr-com">
-          https://github.com/mryqr-com
-        </a>)进行私有化部署，该代码是开源的。
-      </div>
+<!--      <div :class="$style.contentLine">-->
+<!--        此外，您也可以自行下载码如云的开源代码(-->
+<!--        <a class="primaryColoredTextLink"-->
+<!--           target="_blank"-->
+<!--           href="https://github.com/mryqr-com/mry-backend">-->
+<!--          https://github.com/mryqr-com/mry-backend-->
+<!--        </a>)进行私有化部署，此时您将不受额度的限制。-->
+<!--      </div>-->
 
       <!--      <div :class="$style.sectionTitle">为什么免费？</div>-->
       <!--      <div :class="$style.contentLine">-->
