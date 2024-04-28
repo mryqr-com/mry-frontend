@@ -16,7 +16,7 @@ export default {
         return null;
       }
 
-      let displayNumber = (Math.round(this.value.number * 100) / 100).toFixed(this.refControl.precision);
+      let displayNumber = Number(this.value.number).toFixed(this.refControl.precision);
       return this.refControl.suffix ? `${displayNumber} (${this.refControl.suffix})` : displayNumber;
     }
   }
