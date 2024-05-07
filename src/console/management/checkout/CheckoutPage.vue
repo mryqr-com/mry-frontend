@@ -71,17 +71,17 @@
 
               <div :class="$style.bankTransferRow">
                 <span :class="$style.bankTransferRowTitle">银行户名：</span>
-                <span :class="$style.bankTransferRowValue">成都码如云信息技术有限公司</span>
+                <span :class="$style.bankTransferRowValue">XXX信息技术有限公司</span>
               </div>
 
               <div :class="$style.bankTransferRow">
                 <span :class="$style.bankTransferRowTitle">开户银行：</span>
-                <span :class="$style.bankTransferRowValue">中国建设银行成都第三支行</span>
+                <span :class="$style.bankTransferRowValue">XXX银行</span>
               </div>
 
               <div :class="$style.bankTransferRow">
                 <span :class="$style.bankTransferRowTitle">银行账号：</span>
-                <span :class="$style.bankTransferRowValue">51050143630800009961</span>
+                <span :class="$style.bankTransferRowValue">0000000000000</span>
               </div>
 
               <div :class="$style.bankTransferRow">

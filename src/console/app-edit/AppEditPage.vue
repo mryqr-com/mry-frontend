@@ -129,11 +129,6 @@
                                  color="#909399">
           </MryDocumentationEntry>
 
-          <MryMobileEntry :class="$style.rightSectionIcon"
-                          :iconSize="16"
-                          :textSize="12">
-          </MryMobileEntry>
-
           <el-button :class="$style.appOpsButton"
                      icon="el-icon-s-platform"
                      plain

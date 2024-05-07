@@ -145,7 +145,6 @@ import MryCustomerServiceEntry from '@/console/common/components/MryCustomerServ
 import MryCustomerServiceText from '@/console/common/components/MryCustomerServiceText';
 import HelpDocLinker from '@/console/common/components/HelpDocLinker';
 import MryDocumentationEntry from '@/console/common/components/MryDocumentationEntry';
-import MryMobileEntry from '@/console/common/components/MryMobileEntry';
 import eventBus from '@/common/utils/event-bus';
 import {errorOfApi, isApiErrorResponse} from '@/common/utils/common-utils';
 import dayjs from 'dayjs';
@@ -300,7 +299,6 @@ Vue.component('MryCustomerServiceEntry', MryCustomerServiceEntry);
 Vue.component('MryCustomerServiceText', MryCustomerServiceText);
 Vue.component('HelpDocLinker', HelpDocLinker);
 Vue.component('MryDocumentationEntry', MryDocumentationEntry);
-Vue.component('MryMobileEntry', MryMobileEntry);
 Vue.component('ItalicTextButton', ItalicTextButton);
 Vue.component('GeolocationLinkViewer', GeolocationLinkViewer);
 Vue.component('EmailLinkViewer', EmailLinkViewer);
